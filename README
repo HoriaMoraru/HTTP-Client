@@ -1,0 +1,38 @@
+HTTP Client - README
+Acest proiect reprezintă un client HTTP simplu, scris în limbajul C++. Clientul HTTP permite utilizatorului să interacționeze cu un server HTTP și să efectueze anumite acțiuni precum înregistrarea, autentificarea, accesarea și gestionarea cărților dintr-o bibliotecă virtuală.
+
+Dependințe
+Pentru a putea rula acest program, este necesară instalarea următoarelor biblioteci:
+
+"json.hpp" - Biblioteca JSON pentru manipularea datelor JSON
+"requests.hpp" - Biblioteca de cereri HTTP pentru a efectua solicitări către server
+"constants.hpp" - Fișierul de constante care conține informații precum adresa IP și portul serverului
+"helpers.hpp" - Fișierul de funcții ajutătoare pentru manipularea și validarea datelor
+"client_command.hpp" - Fișierul care conține definiția comenzilor clientului
+
+Înregistrare (REGISTER)
+Această comandă permite utilizatorului să se înregistreze pe serverul HTTP. Se va solicita introducerea unui nume de utilizator și a unei parole. După înregistrare, utilizatorul va primi un mesaj de confirmare.
+
+Autentificare (LOGIN)
+Această comandă permite utilizatorului să se autentifice pe serverul HTTP. Se va solicita introducerea numelui de utilizator și a parolei. După autentificare, utilizatorul va primi un mesaj de confirmare.
+
+Accesare bibliotecă (ENTER_LIBRARY)
+Această comandă permite utilizatorului să acceseze biblioteca virtuală de cărți. Este necesară autentificarea în prealabil pentru a avea acces. După accesare, utilizatorul va primi un mesaj de confirmare.
+
+Vizualizare cărți (GET_BOOKS)
+Această comandă permite utilizatorului să obțină lista cărților din bibliotecă. Este necesară autentificarea și accesul la bibliotecă pentru a accesa această funcționalitate.
+
+Vizualizare carte (GET_BOOK)
+Această comandă permite utilizatorului să obțină detalii despre o carte specifică din bibliotecă. Este necesară autentificarea și accesul la bibliotecă pentru a accesa această funcționalitate.
+
+Adăugare carte (ADD_BOOK)
+Această comandă permite utilizatorului să adauge o carte nouă în bibliotecă. Este necesară autentificarea și accesul la bibliotecă pentru a accesa această funcționalitate.
+
+Ștergere carte (DELETE_BOOK)
+Această comandă permite utilizatorului să șteargă o carte din bibliotecă. Este necesară autentificarea și accesul la bibliotecă pentru a accesa această funcționalitate.
+
+Delogare (LOGOUT)
+Această comandă permite utilizatorului să se delogheze de pe serverul HTTP. Este necesară autentificarea în prealabil pentru a accesa această funcționalitate.
+
+Ieșire (EXIT)
+Această comandă permite utilizatorului să încheie executarea programului.
